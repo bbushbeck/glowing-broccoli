@@ -10,4 +10,5 @@ class jugador:
     def mostrar_info(self):
         return f'Nombre: {self.nombre}, Puntos: {self.puntos}'
 
+#oadload
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas Financieras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Juego de Preguntas Financieras</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Opciones</h2>
+            <button onclick="location.href='/login'">Iniciar Sesión</button>
+            <button onclick="location.href='/register'">Registrarse</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Glowing Broccoli. Todos los derechos reservados.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
