@@ -16,7 +16,9 @@ class pregunta:
 
     def display(self):
         print(self.texto, "\n")
-        respuestas = [self.correcta, self.incorrecta]
+        respuestas = [self.correcta]
+        for i in self.incorrecta:
+            respuestas.append(self.incorrecta[i])
         random. shuffle(respuestas)
         for i in respuestas:
             if self.correcta == respuestas[i]:
