@@ -2,12 +2,6 @@ import random
 
 class pregunta:
 
-    # def __init__(self):
-    #     self.texto = ""
-    #     self.correcta = ""
-    #     self.incorrecta = [""]
-    #     self.valor  = 0
-
     def __init__(self, text, correct, incorrect, value):
         self.texto = text
         self.correcto = correct
@@ -15,7 +9,7 @@ class pregunta:
         self.valor = value
 
     def display(self):
-        print(self.texto, "\n")
+        print(self.texto)
         respuestas = [self.correcto]
         for i in self.incorrecto:
             respuestas.append(i)
@@ -23,6 +17,7 @@ class pregunta:
         for i in respuestas:
             if self.correcto == i:
                 icorrecta = i
-        print(respuestas)
+        for i in respuestas:
+            print ("- " ,i)
         
         
