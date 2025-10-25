@@ -1,0 +1,82 @@
+/* Fondo */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: white;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Cuadrito donde está la info */
+.main {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+}
+
+/* Colores de texto */ 
+h1 {
+    color: #bc4b51;
+}
+
+h3 {
+    color: #bc4b51
+}
+
+p {
+    color: #bc4b51
+}
+
+a {
+    color: black
+}
+
+/* "Usuario" y "contraseña */
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+/* */
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+}
+
+/* Boton */
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #bc4b51;
+    width: 100%;
+    font-size: 16px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
