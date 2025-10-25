@@ -1,30 +1,30 @@
-¿Por qué el dinero vale?|RC: Porque todos confiamos en que sirve para comprar y vender cosas.|RI1: Porque está hecho de metal caro.|RI2: Porque lo dice el banco.|RI3: Porque lo imprimen con colores.
-¿Qué pasa si las cosas suben de precio?|RC: El dinero alcanza para comprar menos.|RI1: El dinero vale más.|RI2: Todos ganan más dinero.|RI3: No cambia nada.
-¿Para qué sirven las tarjetas de crédito?|RC: Para comprar ahora y pagar después, si se usa con cuidado.|RI1: Para comprar sin pagar.|RI2: Porque el dinero ya no sirve.|RI3: Para gastar sin pensar.
-¿Por qué es bueno ahorrar por mucho tiempo?|RC: Porque enseña a tener paciencia y a pensar en el futuro.|RI1: Porque así gastas más.|RI2: Porque no puedes disfrutar.|RI3: Porque el dinero se olvida.
-¿Qué significa vivir con lo que tienes?|RC: No gastar más dinero del que ganas.|RI1: Comprar aunque no te alcance.|RI2: Pedir préstamos para todo.|RI3: Gastar para parecer rico.
-¿Qué hace el banco con tu dinero?|RC: Lo guarda y lo usa para dar préstamos.|RI1: Lo deja guardado sin moverlo.|RI2: Lo cambia por oro.|RI3: Lo gasta en sus oficinas.
-¿Por qué no conviene pedir muchos préstamos?|RC: Porque terminas pagando más por los intereses.|RI1: Porque los préstamos son malos.|RI2: Porque el dinero se pierde.|RI3: Porque el banco lo quita.
-¿Qué es un ingreso?|RC: El dinero que recibes por trabajar o vender algo.|RI1: El dinero que prestas.|RI2: El dinero que pierdes.|RI3: Lo que gastas en comida.
-¿Qué es un gasto fijo?|RC: Algo que pagas cada cierto tiempo, como la renta o el internet.|RI1: Algo que pagas una vez.|RI2: Algo que no importa pagar.|RI3: Un gusto pequeño.
-¿Qué es consumir de forma responsable?|RC: Comprar pensando en lo que el planeta y la sociedad necesitan.|RI1: Comprar lo más barato siempre.|RI2: Comprar sin pensar.|RI3: Comprar por moda.
-¿Qué significa invertir en educación?|RC: Usar dinero para aprender y tener mejores oportunidades.|RI1: Comprar libros que no lees.|RI2: Gastar en diversión.|RI3: Pagar por gusto.
-¿Por qué los anuncios influyen en lo que compramos?|RC: Porque usan emociones para hacernos querer algo.|RI1: Porque obligan a comprar.|RI2: Porque todo lo que anuncian es necesario.|RI3: Porque nos pagan por mirar.
-¿Qué enseña el interés compuesto?|RC: Que el dinero ahorrado crece más rápido si se deja más tiempo.|RI1: Que el dinero se duplica solo.|RI2: Que el banco regala dinero.|RI3: Que ahorrar no sirve.
-¿Por qué sirve tener metas con el dinero?|RC: Porque ayudan a planear y no gastar sin pensar.|RI1: Porque el banco lo pide.|RI2: Porque se ven bonitas.|RI3: Porque así gastas más rápido.
-¿Qué es una emergencia financiera?|RC: Algo inesperado que necesita dinero, como una reparación o enfermedad.|RI1: Cuando quieres viajar.|RI2: Cuando te aburres.|RI3: Cuando se te antoja algo caro.
-¿Por qué es importante trabajar?|RC: Porque permite ganar dinero y ayudar a la sociedad.|RI1: Porque hay que hacerlo por obligación.|RI2: Porque todos lo hacen.|RI3: Porque el dinero aparece solo.
-¿Para qué sirven los impuestos?|RC: Para pagar servicios como escuelas, hospitales y seguridad.|RI1: Para que el gobierno guarde dinero.|RI2: Porque todos tienen que pagar algo.|RI3: Porque es una costumbre.
-¿Qué diferencia hay entre una necesidad y un lujo?|RC: La necesidad es algo que debes tener; el lujo es algo que quieres.|RI1: Son lo mismo.|RI2: El lujo es más importante.|RI3: La necesidad no se paga.
-¿Qué es planear tus finanzas?|RC: Organizar tus ingresos y gastos para alcanzar tus metas.|RI1: Gastar sin pensar.|RI2: Guardar dinero sin razón.|RI3: No hacer cuentas.
-¿Por qué compartir también enseña sobre dinero?|RC: Porque nos hace valorar lo que tenemos y ayudar bien.|RI1: Porque da buena suerte.|RI2: Porque ganamos más dinero.|RI3: Porque no hay que ahorrar.
-¿Por qué el tiempo es importante al ahorrar?|RC: Porque si empiezas antes, el dinero crece más.|RI1: Porque el dinero tiene fecha.|RI2: Porque el tiempo cambia su valor.|RI3: Porque da lo mismo ahorrar después.
-¿Qué es el trueque?|RC: Intercambiar cosas sin usar dinero.|RI1: Regalar cosas gratis.|RI2: Cambiar comida por oro.|RI3: Robar para conseguir algo.
-¿Por qué es bueno anotar tus gastos?|RC: Para saber en qué usas tu dinero y mejorar.|RI1: Para presumir tus compras.|RI2: Para gastar más.|RI3: Para pagar más impuestos.
-¿Qué es una deuda responsable?|RC: Un préstamo que puedes pagar sin afectar tus necesidades.|RI1: Pedir sin pagar.|RI2: Deberle a todos.|RI3: Nunca pagar.
-¿Por qué la gente crea su propio negocio?|RC: Porque quiere usar sus ideas para ganar dinero y ser independiente.|RI1: Porque no quiere trabajar.|RI2: Porque el banco se lo pide.|RI3: Porque es más fácil que tener empleo.
-¿Qué podemos aprender si fracasamos con el dinero?|RC: Que los errores ayudan a mejorar nuestras decisiones.|RI1: Que no hay que intentarlo de nuevo.|RI2: Que el dinero es malo.|RI3: Que hay que rendirse.
-¿Qué diferencia hay entre dinero físico y digital?|RC: El físico son billetes y monedas; el digital está en apps o tarjetas.|RI1: No hay diferencia.|RI2: El digital no es real.|RI3: El físico está en internet.
-¿Por qué la inflación es un problema para el ahorro?|RC: Porque hace que el dinero valga menos con el tiempo.|RI1: Porque el dinero desaparece.|RI2: Porque el banco lo quita.|RI3: Porque el ahorro se rompe.
-¿Qué es consumir con conciencia?|RC: Pensar antes de comprar para no dañar al planeta ni gastar de más.|RI1: Comprar rápido.|RI2: Gastar sin pensar.|RI3: Seguir modas.
-¿Por qué el dinero no es lo más importante?|RC: Porque hay cosas como la salud y la amistad que no se compran.|RI1: Porque el dinero no sirve.|RI2: Porque es malo tenerlo.|RI3: Porque da mala suerte.
+¿Por qué el dinero vale?|Porque todos confiamos en que sirve para comprar y vender cosas.|Porque está hecho de metal caro.|Porque lo dice el banco.|Porque lo imprimen con colores.
+¿Qué pasa si las cosas suben de precio?|El dinero alcanza para comprar menos.|El dinero vale más.|Todos ganan más dinero.|No cambia nada.
+¿Para qué sirven las tarjetas de crédito?|Para comprar ahora y pagar después, si se usa con cuidado.|Para comprar sin pagar.|Porque el dinero ya no sirve.|Para gastar sin pensar.
+¿Por qué es bueno ahorrar por mucho tiempo?|Porque enseña a tener paciencia y a pensar en el futuro.|Porque así gastas más.|Porque no puedes disfrutar.|Porque el dinero se olvida.
+¿Qué significa vivir con lo que tienes?|No gastar más dinero del que ganas.|Comprar aunque no te alcance.|Pedir préstamos para todo.|Gastar para parecer rico.
+¿Qué hace el banco con tu dinero?|Lo guarda y lo usa para dar préstamos.|Lo deja guardado sin moverlo.|Lo cambia por oro.|Lo gasta en sus oficinas.
+¿Por qué no conviene pedir muchos préstamos?|Porque terminas pagando más por los intereses.|Porque los préstamos son malos.|Porque el dinero se pierde.|Porque el banco lo quita.
+¿Qué es un ingreso?|El dinero que recibes por trabajar o vender algo.|El dinero que prestas.|El dinero que pierdes.|Lo que gastas en comida.
+¿Qué es un gasto fijo?|Algo que pagas cada cierto tiempo, como la renta o el internet.|Algo que pagas una vez.|Algo que no importa pagar.|Un gusto pequeño.
+¿Qué es consumir de forma responsable?|Comprar pensando en lo que el planeta y la sociedad necesitan.|Comprar lo más barato siempre.|Comprar sin pensar.|Comprar por moda.
+¿Qué significa invertir en educación?|Usar dinero para aprender y tener mejores oportunidades.|Comprar libros que no lees.|Gastar en diversión.|Pagar por gusto.
+¿Por qué los anuncios influyen en lo que compramos?|Porque usan emociones para hacernos querer algo.|Porque obligan a comprar.|Porque todo lo que anuncian es necesario.|Porque nos pagan por mirar.
+¿Qué enseña el interés compuesto?|Que el dinero ahorrado crece más rápido si se deja más tiempo.|Que el dinero se duplica solo.|Que el banco regala dinero.|Que ahorrar no sirve.
+¿Por qué sirve tener metas con el dinero?|Porque ayudan a planear y no gastar sin pensar.|Porque el banco lo pide.|Porque se ven bonitas.|Porque así gastas más rápido.
+¿Qué es una emergencia financiera?|Algo inesperado que necesita dinero, como una reparación o enfermedad.|Cuando quieres viajar.|Cuando te aburres.|Cuando se te antoja algo caro.
+¿Por qué es importante trabajar?|Porque permite ganar dinero y ayudar a la sociedad.|Porque hay que hacerlo por obligación.|Porque todos lo hacen.|Porque el dinero aparece solo.
+¿Para qué sirven los impuestos?|Para pagar servicios como escuelas, hospitales y seguridad.|Para que el gobierno guarde dinero.|Porque todos tienen que pagar algo.|Porque es una costumbre.
+¿Qué diferencia hay entre una necesidad y un lujo?|La necesidad es algo que debes tener; el lujo es algo que quieres.|Son lo mismo.|El lujo es más importante.|La necesidad no se paga.
+¿Qué es planear tus finanzas?|Organizar tus ingresos y gastos para alcanzar tus metas.|Gastar sin pensar.|Guardar dinero sin razón.|No hacer cuentas.
+¿Por qué compartir también enseña sobre dinero?|Porque nos hace valorar lo que tenemos y ayudar bien.|Porque da buena suerte.|Porque ganamos más dinero.|Porque no hay que ahorrar.
+¿Por qué el tiempo es importante al ahorrar?|Porque si empiezas antes, el dinero crece más.|Porque el dinero tiene fecha.|Porque el tiempo cambia su valor.|Porque da lo mismo ahorrar después.
+¿Qué es el trueque?|Intercambiar cosas sin usar dinero.|Regalar cosas gratis.|Cambiar comida por oro.|Robar para conseguir algo.
+¿Por qué es bueno anotar tus gastos?|Para saber en qué usas tu dinero y mejorar.|Para presumir tus compras.|Para gastar más.|Para pagar más impuestos.
+¿Qué es una deuda responsable?|Un préstamo que puedes pagar sin afectar tus necesidades.|Pedir sin pagar.|Deberle a todos.|Nunca pagar.
+¿Por qué la gente crea su propio negocio?|Porque quiere usar sus ideas para ganar dinero y ser independiente.|Porque no quiere trabajar.|Porque el banco se lo pide.|Porque es más fácil que tener empleo.
+¿Qué podemos aprender si fracasamos con el dinero?|Que los errores ayudan a mejorar nuestras decisiones.|Que no hay que intentarlo de nuevo.|Que el dinero es malo.|Que hay que rendirse.
+¿Qué diferencia hay entre dinero físico y digital?|El físico son billetes y monedas; el digital está en apps o tarjetas.|No hay diferencia.|El digital no es real.|El físico está en internet.
+¿Por qué la inflación es un problema para el ahorro?|Porque hace que el dinero valga menos con el tiempo.|Porque el dinero desaparece.|Porque el banco lo quita.|Porque el ahorro se rompe.
+¿Qué es consumir con conciencia?|Pensar antes de comprar para no dañar al planeta ni gastar de más.|Comprar rápido.|Gastar sin pensar.|Seguir modas.
+¿Por qué el dinero no es lo más importante?|Porque hay cosas como la salud y la amistad que no se compran.|Porque el dinero no sirve.|Porque es malo tenerlo.|Porque da mala suerte.
