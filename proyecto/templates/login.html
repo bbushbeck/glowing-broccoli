@@ -11,6 +11,12 @@
         <h1>Login</h1>
         <h3>Introduce tus datos</h3>
 
+        <!-- Si Flask manda un mensaje de error, se muestra aquí -->
+        {% if error %}
+            <p style="color: red; font-weight: bold;">{{ error }}</p>
+        {% endif %}
+
+        <!-- Formulario que manda los datos al backend -->
         <form action="{{ url_for('login') }}" method="post">
             <label for="usuario">Usuario:</label>
             <input type="text" id="usuario" name="usuario" placeholder="Introduzca su usuario" required>
