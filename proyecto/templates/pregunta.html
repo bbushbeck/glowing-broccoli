@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="main">
-        <h2>Pregunta del día</h2> 
+        <h2>TRIVIA</h2> 
         <p>{{ texto }} </p>
     <form action="{{ url_for('verificar_respuesta') }}" method="POST">
         <div class="warp">
@@ -18,8 +18,8 @@
         </div>
     </form>
     <div class="corner-display">
-    <p>Usuario: {{ user }}</p>
-    <p>Puntaje: {{ score }}</p>
+    <h1>Usuario: {{ user }}</h1>
+    <h1>Puntaje: {{ score }}</h1>
     </div>
     <div class="container">
         <form action="{{ url_for('menu') }}" method="GET">
