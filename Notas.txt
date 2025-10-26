@@ -1,0 +1,3 @@
+Si nos sobra tiempo checar esto
+- El nombre de usuario funciona como buscador, no es estricto
+- No hay iniciador de correo

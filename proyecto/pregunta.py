@@ -1,15 +1,13 @@
 import random
 
-class pregunta:
+class Pregunta:
 
-    def __init__(self, text, correct, incorrect, value):
+    def __init__(self, text, correct, incorrect):
         self.texto = text
         self.correcto = correct
         self.incorrecto = incorrect
-        self.valor = value
 
-    def display(self):
-        print(self.texto)
+    def randomiza(self):
         respuestas = [self.correcto]
         for i in self.incorrecto:
             respuestas.append(i)
@@ -17,7 +15,5 @@ class pregunta:
         for i in respuestas:
             if self.correcto == i:
                 icorrecta = i
-        for i in respuestas:
-            print ("- " ,i)
-        
+
         
