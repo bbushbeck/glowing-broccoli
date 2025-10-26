@@ -72,7 +72,7 @@ def verificar_usuario(nombre, contrasena):
                 else:
                     return False, "Contraseña incorrecta"
 
-    return False, "Usuario no encontrado"
+    return False, "¡Usuario no encontrado!"
 
 def read_registro(path=ruta_registro):
     entries = []

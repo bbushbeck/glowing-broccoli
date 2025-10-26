@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 /* Fondo */
 body {
     display: flex;
@@ -6,17 +7,17 @@ body {
     font-family: sans-serif;
     line-height: 1.5;
     min-height: 100vh;
-    background: white;
+    background: #d0585e;
     flex-direction: column;
     margin: 0;
 }
 
 /* Cuadrito donde está la info */
-.main{
+.main_registro{
     background-color: white;
     opacity: 90%;
     border-radius: 15px;
-    box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 20px #95363a;
     padding: 10px 20px;
     transition: transform 0.2s;
     width: 800px;
@@ -25,46 +26,66 @@ body {
 }
 
 /* Colores de texto */ 
-h1 {
+.registro {
+    font-family: "Press Start 2P";
+    font-size:xx-large;
+    text-align: center;
     color: #bc4b51;
 }
 
-h3 {
-    color: #bc4b51
+.creacion_cuenta {
+    color: #bc4b51;
+    font-family: "Pixelify Sans";
+    font-size: x-large;
+    text-align: center;
 }
 
 p {
+    font-family: monospace;
+    font-size:large;
     color: #bc4b51
 }
 
 a {
-    color: black
+    font-family: monospace;
+    font-size: medium;
+    border: 3px outset #bc4b51;
+    margin: 20px;
+    padding: 5px;
+    text-decoration: none;
+    font-size:large;
+    color: #bc4b51;
 }
 
 /* "Usuario" y "contraseña */
 label {
+    font-family: "Pixelify Sans";
     display: block;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 5px;
+    font-size: x-large;
     text-align: left;
-    color: black;
+    color: #bc4b51;;
     font-weight: bold;
 }
 
 /* */
 input {
+    font-size: larger;
+    font-family: monospace;
     display: block;
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ffff;
+    border: 1px solid #bc4b51;
     border-radius: 5px;
 }
 
 /* Boton */
 button {
+    font-family: "Press Start 2P";
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
@@ -72,7 +93,7 @@ button {
     border: none;
     color: white;
     cursor: pointer;
-    background-color: #bc4b51;
+    background-color: #bc4b51;;
     width: 100%;
     font-size: 16px;
 }

@@ -1,3 +1,8 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,9 +11,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css') }}">
 </head>
 <body>
-    <div class="main">
-        <h1>Registro</h1>
-        <h3>Crea tu cuenta</h3>
+    <div class="main_registro">
+        <label class="registro" for="input1">Registro</label>
+        <label class="creacion_cuenta" for="input1">Crea tu cuenta</label> 
 
         {% if error %}
             <p style="color: red; font-weight: bold;">{{ error }}</p>

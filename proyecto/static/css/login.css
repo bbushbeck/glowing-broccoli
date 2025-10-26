@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 /* Fondo */
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: monospace;
     line-height: 1.5;
     min-height: 100vh;
     background-color: #BFD7FF;
@@ -19,37 +21,44 @@ body {
     padding: 10px 20px;
     transition: transform 0.2s;
     width: 800px;
-    height: 500px;
+    height:490px;
     text-align: center;
 }
 
 /* Colores de texto */ 
 .login {
+    font-family: "Press Start 2P";
     color: #7085d3;
     font-size:xx-large;
     text-align: center;
 }
 
 .introducirDatos {
+    font-family: "Pixelify Sans";
     color: #7085d3;
     font-size:x-large;
     text-align: center;
 }
 
-h3 {
-    color: #9BB1FF;
-}
-
 p {
-    color: #9BB1FF;
+    font-family: monospace;
+    font-size:large;
+    color: #5465FF;
 }
 
-.registro {
-    color: black;
+a {
+    font-family: monospace;
+    font-size: large;
+    border: 3px outset #5465FF;
+    margin: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color:#5465FF;
 }
 
 /* "Usuario" y "contraseña */
 label {
+    font-family: "Pixelify Sans";
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -62,17 +71,20 @@ label {
 
 /* */
 input {
+    font-size: larger;
+    font-family: monospace;
     display: block;
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ffff;
+    border: 1px solid #7085d3;
     border-radius: 5px;
 }
 
 /* Boton */
 button {
+    font-family: "Press Start 2P";
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
