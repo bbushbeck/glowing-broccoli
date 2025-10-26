@@ -98,6 +98,31 @@ def aventura():
 def scoreboard():
     return render_template('scoreboard.html')
 
+@app.route('/verificar_respuesta', methods=['POST'])
+def verificar_respuesta():
+    respuesta_seleccionada = request.form['respuesta']  # Opción seleccionada por el usuario
+    pregunta_actual = preguntas[0]  # Suponiendo que siempre se muestra la primera pregunta
+
+    # Verificamos si la respuesta seleccionada es correcta
+    if respuesta_seleccionada == pregunta_actual.correcto:
+        session['puntos'] += 50
+        mensaje = "¡Correcto!"
+    else:
+        # Si la respuesta es incorrecta, no cambiamos el puntaje
+        mensaje = f"Incorrecto. La respuesta correcta era: {pregunta_actual.correcto}"
+
+    # Luego de verificar, redirigimos a la página de preguntas, mostrando el mensaje
+    return render_template('pregunta.html', 
+                           texto=pregunta_actual.texto, 
+                           r1=pregunta_actual.correcto, 
+                           r2=pregunta_actual.incorrecto[0], 
+                           r3=pregunta_actual.incorrecto[1], 
+                           r4=pregunta_actual.incorrecto[2], 
+                           user=session['usuario'], 
+                           score=session['puntos'], 
+                           mensaje=mensaje)
+
+
 # Cerrar sesión
 @app.route('/logout')
 def logout():

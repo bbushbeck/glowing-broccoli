@@ -9,17 +9,22 @@
     <div class="main">
         <h2>Pregunta del día</h2> 
         <p>{{ texto }} </p>
-    <div class="warp">
-        <button class="mi-boton">{{ r1 }}</button>
-        <button class="mi-boton">{{ r2 }}</button>
-        <button class="mi-boton">{{ r3 }}</button>
-        <button class="mi-boton">{{ r4 }}</button>
-    </div>
-    </div>
+    <form action="{{ url_for('verificar_respuesta') }}" method="POST">
+        <div class="warp">
+            <button type="submit" name="respuesta" value="{{ r1 }}" class="mi-boton">{{ r1 }}</button>
+            <button type="submit" name="respuesta" value="{{ r2 }}" class="mi-boton">{{ r2 }}</button>
+            <button type="submit" name="respuesta" value="{{ r3 }}" class="mi-boton">{{ r3 }}</button>
+            <button type="submit" name="respuesta" value="{{ r4 }}" class="mi-boton">{{ r4 }}</button>
+        </div>
+    </form>
     <div class="corner-display">
     <p>Usuario: {{ user }}</p>
     <p>Puntaje: {{ score }}</p>
     </div>
-
+    <div class="container">
+        <form action="{{ url_for('menu') }}" method="POST">
+            <button type="submit" class="salida">Exit</button>
+        </form>
+    </div>
 </body>
 </html>

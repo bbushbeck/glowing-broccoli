@@ -61,7 +61,7 @@ h2 {
 .corner-display {
     position: fixed;          /* Siempre visible al hacer scroll */
     top: 10px;                /* Separación desde arriba */
-    right: 1350px;              /* Separación desde la derecha */
+    left: 10px;              /* Separación desde la derecha */
     background-color: rgba(0, 0, 0, 0.7);  /* Fondo semitransparente */
     color: white;             /* Texto blanco */
     padding: 10px 40px;       /* Espaciado interno */
@@ -69,4 +69,24 @@ h2 {
     font-size: 15px;          /* Tamaño de texto */
     box-shadow: 0 0 8px rgba(0,0,0,0.3);  /* Sombra ligera */
     z-index: 1000;            /* Asegura que quede encima de otros elementos */
+}
+
+.container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.salida{
+    background: rgb(157, 11, 11);
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin-top: 15px;
 }
