@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scoreboard</title>
+  <style>
+    /* estilos simples inline (solo HTML + CSS dentro del template) */
+    :root { --bg:#f7f7fb; --card:#fff; --accent:#2b6cb0; --muted:#666; }
+    body { font-family: Arial, sans-serif; background:var(--bg); margin:0; padding:24px; color:#222; }
+    .container { max-width:800px; margin:24px auto; background:var(--card); padding:20px; border-radius:8px; box-shadow:0 4px 18px rgba(0,0,0,0.06); }
+    h1 { margin:0 0 16px 0; text-align:center; color:var(--accent); }
+    .meta { text-align:center; color:var(--muted); font-size:0.9rem; margin-bottom:12px; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; }
+    thead th { text-align:left; padding:10px 8px; border-bottom:2px solid #eee; font-weight:600; }
+    tbody td { padding:10px 8px; border-bottom:1px solid #f0f0f0; }
+    .score { text-align:right; font-weight:700; width:120px; }
+    .empty { text-align:center; color:var(--muted); margin:20px 0; }
+    .note { margin-top:16px; font-size:0.9rem; color:var(--muted); text-align:center; }
+    .links { margin-top:12px; text-align:center; }
+    a { color:var(--accent); text-decoration:none; font-weight:600; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Scoreboard</h1>
+    <div class="meta">Última actualización del archivo: {{ updated }}</div>
+
+    {% if entries %}
+      <table>
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th class="score">Puntaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user, score in entries %}
+          <tr>
+            <td>{{ user }}</td>
+            <td class="score">{{ score }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="empty">No hay registros todavía.</p>
+    {% endif %}
+
+    <p class="note">Las contraseñas no se muestran ni se exponen.</p>
+
+    <div class="links">
+      <a href="/api/scoreboard" target="_blank">Ver JSON (API)</a>
+    </div>
+  </main>
+</body>
+</html>
