@@ -99,8 +99,13 @@ button:hover {
     right: 10px;
     z-index: 1000;
 }
-
-.salida{
+  
+  .salida{
+    top: 12px;
+    right: 35px;
+    position: fixed;
+    margin: 0;
+    z-index: 9999;
     background: rgb(157, 11, 11);
     border: 1px solid #ccc;
     padding: 10px 20px;
@@ -111,4 +116,4 @@ button:hover {
     transition: background-color 0.3s, color 0.3s;
     display: block;
     margin-top: 15px;
-}
+  }
