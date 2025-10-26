@@ -48,6 +48,7 @@ h2 {
 .mi-boton:hover {
     background-color: #007bff;
     color: white;
+    color
 }
 
 .warp {
@@ -59,16 +60,17 @@ h2 {
 }
 
 .corner-display {
-    position: fixed;          /* Siempre visible al hacer scroll */
-    top: 10px;                /* Separación desde arriba */
-    left: 10px;              /* Separación desde la derecha */
-    background-color: rgba(0, 0, 0, 0.7);  /* Fondo semitransparente */
-    color: white;             /* Texto blanco */
-    padding: 10px 40px;       /* Espaciado interno */
-    border-radius: 10px;      /* Bordes redondeados */
-    font-size: 15px;          /* Tamaño de texto */
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);  /* Sombra ligera */
-    z-index: 1000;            /* Asegura que quede encima de otros elementos */
+    position: fixed;       
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3); 
+    z-index: 1000;
+    text-align: left;
 }
 
 .container {

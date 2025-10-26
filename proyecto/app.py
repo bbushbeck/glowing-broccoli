@@ -108,18 +108,16 @@ def register():
 
 @app.route('/menu')
 def menu():
-    return render_template('menu.html')
+    return render_template('menu.html', user = session['usuario'], score = session['puntos'])
 
 # Página de preguntas (solo accesible si ya inició sesión)
 @app.route('/pregunta')
 def pregunta():
     random.shuffle(preguntas)
     preg = preguntas[0].texto
-    respuesta1 = preguntas[0].correcto
-    respuesta2 = preguntas[0].incorrecto[0]
-    respuesta3 = preguntas[0].incorrecto[1]
-    respuesta4 = preguntas[0].incorrecto[2]
-    return render_template('pregunta.html', texto = preg, r1 = respuesta1, r2 = respuesta2, r3 = respuesta3, r4 = respuesta4, user = session['usuario'], score = session['puntos'])
+    banco = [preguntas[0].correcto, preguntas[0].incorrecto[0], preguntas[0].incorrecto[1], preguntas[0].incorrecto[2]]
+    random.shuffle(banco)
+    return render_template('pregunta.html', texto = preg, r1 = banco[0], r2 = banco[1], r3 = banco[2], r4 = banco[3], user = session['usuario'], score = session['puntos'])
 
 @app.route('/aventura')
 def aventura():
@@ -141,18 +139,21 @@ def verificar_respuesta():
     else:
         # Si la respuesta es incorrecta, no cambiamos el puntaje
         mensaje = f"Incorrecto. La respuesta correcta era: {pregunta_actual.correcto}"
-
+        
+    random.shuffle(preguntas)
+    pregunta_actual = preguntas[0]
+    banco = [pregunta_actual.correcto, pregunta_actual.incorrecto[0], pregunta_actual.incorrecto[1], pregunta_actual.incorrecto[2]]
+    random.shuffle(banco)
     # Luego de verificar, redirigimos a la página de preguntas, mostrando el mensaje
     return render_template('pregunta.html', 
                            texto=pregunta_actual.texto, 
-                           r1=pregunta_actual.correcto, 
-                           r2=pregunta_actual.incorrecto[0], 
-                           r3=pregunta_actual.incorrecto[1], 
-                           r4=pregunta_actual.incorrecto[2], 
+                           r1 = banco[0], 
+                           r2 = banco[1], 
+                           r3 = banco[2], 
+                           r4 = banco[3],
                            user=session['usuario'], 
                            score=session['puntos'], 
                            mensaje=mensaje)
-
 
 # Cerrar sesión
 @app.route('/logout')
