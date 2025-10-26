@@ -19,6 +19,10 @@
     .note { margin-top:16px; font-size:0.9rem; color:var(--muted); text-align:center; }
     .links { margin-top:12px; text-align:center; }
     a { color:var(--accent); text-decoration:none; font-weight:600; }
+    .exit {position: fixed; bottom: 10px; right: 10px; z-index: 1000;}
+    .salida{background: rgb(157, 11, 11); border: 1px solid #ccc; padding: 10px 20px; border-radius: 5px;
+    color: white; cursor: pointer; font-size: 20px; transition: background-color 0.3s, color 0.3s; display: block; margin-top: 15px;}
+
   </style>
 </head>
 <body>
@@ -48,6 +52,12 @@
     {% endif %}
 
     <p class="note">Las contraseñas no se muestran ni se exponen.</p>
+    
+    <div class="exit">
+        <form action="{{ url_for('menu') }}" method="GET">
+            <button type="submit" class="salida">Exit</button>
+        </form>
+    </div>
 
   </main>
 </body>
