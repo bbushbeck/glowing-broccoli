@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Juego de decisiones (estático)</title>
+  <!-- Ruta relativa: desde proyecto/templates/ hacia proyecto/static/ -->
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Juego de decisiones</h1>
+
+    <div id="game">
+      <div id="result" class="result-box hidden"></div>
+
+      <div id="question-box">
+        <p id="question" class="question">Cargando...</p>
+
+        <form id="choices-form" class="choices" action="#" onsubmit="return false;">
+          <!-- botones se insertan desde game.js -->
+        </form>
+
+        <div class="controls">
+          <button id="restart" class="btn secondary" type="button">Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="history" id="history">
+        <h3>Historial</h3>
+        <div id="history-list">(Sin movimientos todavía)</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/game.js"></script>
+</body>
+</html>
