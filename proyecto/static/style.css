@@ -8,12 +8,16 @@ body {
 }
 
 .container {
-  max-width: 760px;
-  margin: 0 auto;
-  background: #fff;
   padding: 18px;
+  position: relative;
+  width: 800px;
+  margin: 250px auto 0;
+  background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  justify-content: center;
+  align-items: center;
+  
 }
 
 /* --- Centrado: nuevo --- */
@@ -107,4 +111,32 @@ button.choice:hover { opacity: 0.9; }
   margin-top: 18px;
   font-size: 0.95rem;
   color: #444;
+}
+
+.exit{
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  margin: 0;
+  z-index: 9999;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+}
+
+.salida{
+  background: rgb(157, 11, 11);
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+  margin-top: 15px;
 }

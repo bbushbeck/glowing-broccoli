@@ -45,10 +45,13 @@ h2 {
     margin-top: 15px; /* separa los botones */
 }
 
+button:hover {
+    transform: scale(1.5);
+}
+
 .mi-boton:hover {
     background-color: #007bff;
     color: white;
-    color
 }
 
 .warp {

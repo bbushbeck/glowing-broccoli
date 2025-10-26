@@ -1,0 +1,105 @@
+/* Fondo */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: #BFD7FF;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Cuadrito donde está la info */
+.main{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #788BFF;
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+}
+
+/* Colores de texto */ 
+.login {
+    color: #7085d3;
+    font-size:xx-large;
+    text-align: center;
+}
+
+.introducirDatos {
+    color: #7085d3;
+    font-size:x-large;
+    text-align: center;
+}
+
+h3 {
+    color: #9BB1FF;
+}
+
+p {
+    color: #9BB1FF;
+}
+
+.registro {
+    color: black;
+}
+
+/* "Usuario" y "contraseña */
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: x-large;
+    text-align: left;
+    color: #788BFF;;
+    font-weight: bold;
+}
+
+/* */
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+}
+
+/* Boton */
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #7085d3;;
+    width: 100%;
+    font-size: 16px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corner-display {
+    position: fixed;       
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3); 
+    z-index: 1000;
+}

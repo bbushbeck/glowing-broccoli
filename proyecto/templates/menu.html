@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Menú principal</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/prueba.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
     <style>
         /* Puedes poner esto aquí o en tu CSS */
         .menu-buttons {
@@ -15,7 +15,7 @@
         }
 
         .menu-buttons form {
-            width: 100%;
+            width: 500%;
             max-width: 200px; /* ancho máximo para mantenerlo centrado */
         }
 
@@ -25,6 +25,14 @@
             font-size: 16px;
             border-radius: 8px;
             cursor: pointer;
+        }
+
+        button {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        button:hover {
+        transform: scale(1.5);
         }
 
     </style>

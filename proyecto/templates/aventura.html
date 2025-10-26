@@ -20,19 +20,21 @@
         <form id="choices-form" class="choices" action="#" onsubmit="return false;">
           <!-- botones se insertan desde game.js -->
         </form>
-
         <div class="controls">
           <button id="restart" class="btn secondary" type="button">Reiniciar</button>
         </div>
       </div>
-
       <div class="history" id="history">
         <h3>Historial</h3>
         <div id="history-list">(Sin movimientos todavía)</div>
       </div>
     </div>
-  </div>
-
+</div>
+<div class="exit">
+  <form action="{{ url_for('menu') }}" method="GET">
+      <button type="submit" class="salida">Exit</button>
+  </form>
+</div>
   <script src="../static/game.js"></script>
 </body>
 </html>

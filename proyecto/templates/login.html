@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <title>HTML LOGIN PRUEBA</title>
     <!-- Referencia al CSS en la carpeta static -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/prueba.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
     <div class="main">
-        <h1>Login</h1>
-        <h3>Introduce tus datos</h3>
+        <label class="login" for="input1">Login</label>
+        <label class="introducirDatos" for="input1">Introduce tus datos</label>
 
         <!-- Si Flask manda un mensaje de error, se muestra aquí -->
         {% if error %}
@@ -30,7 +30,7 @@
         </form>
 
         <p>¿No te has registrado?</p>
-        <a href="{{ url_for('register') }}" style="text-decoration: none;">Crear una cuenta</a>
+        <label class="registro" for href="{{ url_for('register') }}" style="text-decoration: none;">Crear una cuenta</label>
 
     </div>
 </body>

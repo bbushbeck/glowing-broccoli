@@ -2,7 +2,7 @@
 
 # formato por línea: <usuario> <password> <puntaje>
 
-pablo 67 71
+pablo 67 171
 ana miPass123 45
 
 juan otraClave 90
@@ -14,4 +14,6 @@ marippt pussycrasher69 0
 vegetta777 wigetta 0
 
 papu llamada 0
+
+sexoduro hola 0
 

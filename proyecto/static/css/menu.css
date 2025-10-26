@@ -12,13 +12,15 @@ body {
 }
 
 /* Cuadrito donde está la info */
-.main {
+.main{
     background-color: white;
+    opacity: 90%;
     border-radius: 15px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px gray;
     padding: 10px 20px;
     transition: transform 0.2s;
-    width: 500px;
+    width: 800px;
+    height: 500px;
     text-align: center;
 }
 
