@@ -2,7 +2,7 @@
 
 # formato por línea: <usuario> <password> <puntaje>
 
-pablo 67 271
+pablo 67 771
 ana miPass123 45
 
 juan otraClave 90
