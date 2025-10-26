@@ -172,6 +172,7 @@ def verificar_respuesta():
     # Verificamos si la respuesta seleccionada es correcta
     if respuesta_seleccionada == pregunta_actual.correcto:
         session['puntos'] += 50
+        actualizar_puntaje(session['usuario'], session['puntos'])
         mensaje = "¡Correcto!"
     else:
         # Si la respuesta es incorrecta, no cambiamos el puntaje
@@ -191,6 +192,29 @@ def verificar_respuesta():
                            user=session['usuario'], 
                            score=session['puntos'], 
                            mensaje=mensaje)
+
+def actualizar_puntaje(usuario, nuevo_puntaje):
+    """Actualiza el puntaje del usuario en registro.txt"""
+    if not os.path.exists(ruta_registro):
+        return
+
+    lineas_nuevas = []
+    with open(ruta_registro, "r", encoding="utf-8") as f:
+        for linea in f:
+            datos = linea.strip().split()
+            if len(datos) < 3:
+                continue
+            nombre = datos[0]
+            password = " ".join(datos[1:-1])
+            # Si es el usuario actual, actualizamos su puntaje
+            if nombre == usuario:
+                lineas_nuevas.append(f"{nombre} {password} {nuevo_puntaje}\n")
+            else:
+                lineas_nuevas.append(linea + "\n")
+
+    # Sobrescribimos el archivo con la nueva información
+    with open(ruta_registro, "w", encoding="utf-8") as f:
+        f.writelines(lineas_nuevas)
 
 # Cerrar sesión
 @app.route('/logout')
