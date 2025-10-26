@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <title>HTML LOGIN PRUEBA</title>
     <!-- Referencia al CSS en la carpeta static -->
-    <link rel="stylesheet" href="static/css/prueba.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prueba.css') }}">
 </head>
 <body>
     <div class="main">
         <h1>Login</h1>
         <h3>Introduce tus datos</h3>
 
-        <form action="" method="post">
+        <form action="{{ url_for('login') }}" method="post">
             <label for="usuario">Usuario:</label>
             <input type="text" id="usuario" name="usuario" placeholder="Introduzca su usuario" required>
 
@@ -19,7 +19,7 @@
             <input type="password" id="password" name="password" placeholder="Introduzca su contraseña" required>
 
             <div class="wrap">
-                <button type="button" onclick="window.location.href='siguiente.html'">Mandar</button>
+                <button type="submit">Mandar</button>
             </div>
         </form>
 
