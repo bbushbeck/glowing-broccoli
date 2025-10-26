@@ -41,7 +41,9 @@ def verificar_usuario(nombre, contrasena):
             datos = linea.strip().split()
             if len(datos) < 3:
                 continue
-            nombre_txt, contrasena_txt, puntos = datos
+            nombre_txt = datos[0]
+            puntos = datos[-1]
+            contrasena_txt = " ".join(datos[1:-1])
 
             if nombre == nombre_txt:
                 if contrasena == contrasena_txt:
@@ -74,6 +76,35 @@ def login():
 
     # GET → muestra el formulario
     return render_template('login.html')
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        usuario = request.form['usuario'].strip()
+        password = request.form['password'].strip()
+
+        # Validaciones básicas
+        if not usuario or not password:
+            return render_template('register.html', error="Completa todos los campos")
+
+        if len(password) < 4:
+            return render_template('register.html', error="La contraseña debe tener al menos 4 caracteres")
+
+        # Verificar si el usuario ya existe
+        if os.path.exists(ruta_registro):
+            with open(ruta_registro, "r", encoding="utf-8") as f:
+                for linea in f:
+                    datos = linea.strip().split()
+                    if len(datos) >= 1 and datos[0] == usuario:
+                        return render_template('register.html', error="El usuario ya existe")
+
+        # Registrar nuevo usuario con puntaje inicial 0
+        with open(ruta_registro, "a", encoding="utf-8") as f:
+            f.write(f"{usuario} {password} 0\n")
+
+        return render_template('register.html', mensaje="Usuario registrado con éxito. Ahora inicia sesión.")
+
+    return render_template('register.html')
 
 @app.route('/menu')
 def menu():
