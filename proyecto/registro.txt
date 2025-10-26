@@ -1,9 +1,18 @@
 # ejemplo de registro.txt dentro de proyecto (ruta usada por scoreboard.py)
+
 # formato por línea: <usuario> <password> <puntaje>
+
 pablo 67 21
+
 ana miPass123 45
+
 juan otraClave 90
+
 maria 12345 60
+
 marippt pussycrasher69 0
+
 vegetta777 wigetta 0
+
 papu llamada 0
+

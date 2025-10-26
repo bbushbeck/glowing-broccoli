@@ -2,6 +2,8 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, session
 from pregunta import Pregunta
 import random
+from datetime import datetime
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -31,6 +33,25 @@ app.secret_key = "clave_super_secreta"  # necesaria para usar sesiones
 # Ruta del archivo de usuarios
 ruta_registro = os.path.join(app.root_path, "registro.txt")
 
+def actualizar_puntaje(usuario, nuevo_puntaje):
+    if not os.path.exists(ruta_registro):
+        return
+    lineas_nuevas = []
+    with open(ruta_registro, "r", encoding="utf-8") as f:
+        for linea in f:
+            datos = linea.strip().split()
+            if len(datos) < 3:
+                continue
+            nombre = datos[0]
+            password = " ".join(datos[1:-1])
+            if nombre == usuario:
+                lineas_nuevas.append(f"{nombre} {password} {nuevo_puntaje}\n")
+            else:
+                lineas_nuevas.append(linea + "\n")
+    with open(ruta_registro, "w", encoding="utf-8") as f:
+        f.writelines(lineas_nuevas)
+
+
 def verificar_usuario(nombre, contrasena):
     """Verifica si el usuario existe y la contraseña coincide."""
     if not os.path.exists(ruta_registro):
@@ -53,6 +74,25 @@ def verificar_usuario(nombre, contrasena):
 
     return False, "Usuario no encontrado"
 
+def read_registro(path=ruta_registro):
+    entries = []
+    if not os.path.exists(path):
+        return entries
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            parts = line.strip().split()
+            if len(parts) < 3:
+                continue
+            user = parts[0]
+            score_part = parts[-1]
+            try:
+                score = int(score_part)
+            except ValueError:
+                continue
+            entries.append((user, score))
+    entries.sort(key=lambda x: (-x[1], x[0].lower()))
+    return entries
+
 
 # Página de login
 @app.route('/', methods=['GET', 'POST'])
@@ -68,6 +108,7 @@ def login():
             # ✅ Guardamos datos del usuario en sesión
             session['usuario'] = usuario
             session['puntos'] = info
+            actualizar_puntaje(session['usuario'], session['puntos'])
             # ✅ Redirige a pregunta.html
             return redirect(url_for('menu'))
         else:
@@ -123,10 +164,6 @@ def pregunta():
 def aventura():
     return render_template('aventura.html')
 
-@app.route('/scoreboard')
-def scoreboard():
-    return render_template('scoreboard.html')
-
 @app.route('/verificar_respuesta', methods=['POST'])
 def verificar_respuesta():
     respuesta_seleccionada = request.form['respuesta']  # Opción seleccionada por el usuario
@@ -160,6 +197,22 @@ def verificar_respuesta():
 def logout():
     session.clear()
     return redirect(url_for('login'))
+
+@app.route("/scoreboard")
+def scoreboard():
+    entries = read_registro()
+    updated = "desconocida"
+    try:
+        updated = datetime.fromtimestamp(os.path.getmtime(ruta_registro)).strftime("%Y-%m-%d %H:%M:%S")
+    except Exception:
+        pass
+    return render_template("scoreboard.html", entries=entries, updated=updated)
+
+@app.route("/api/scoreboard")
+def api_scoreboard():
+    entries = read_registro()
+    data = [{"user": u, "score": s} for u, s in entries]
+    return jsonify(data)
 
 
 if __name__ == '__main__':
