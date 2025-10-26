@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>PREGUNTA DEL DÍA</title>
-    <link rel="stylesheet" href="static/css/pregunta.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pregunta.css') }}">
 </head>
 <body>
     <div class="main">
@@ -16,5 +16,10 @@
         <button class="mi-boton">{{ r4 }}</button>
     </div>
     </div>
+    <div class="corner-display">
+    <p>Usuario: {{ user }}</p>
+    <p>Puntaje: {{ score }}</p>
+    </div>
+
 </body>
 </html>

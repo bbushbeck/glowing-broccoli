@@ -25,7 +25,7 @@ def leer_preguntas(archivo):
     return preguntas
 
 leer_preguntas("preguntas_finanzas.txt")
-
+usuario = ""
 app.secret_key = "clave_super_secreta"  # necesaria para usar sesiones
 
 # Ruta del archivo de usuarios
@@ -85,7 +85,7 @@ def pregunta():
     respuesta2 = preguntas[0].incorrecto[0]
     respuesta3 = preguntas[0].incorrecto[1]
     respuesta4 = preguntas[0].incorrecto[2]
-    return render_template('pregunta.html', texto = preg, r1 = respuesta1, r2 = respuesta2, r3 = respuesta3, r4 = respuesta4)
+    return render_template('pregunta.html', texto = preg, r1 = respuesta1, r2 = respuesta2, r3 = respuesta3, r4 = respuesta4, user = session['usuario'], score = session['puntos'])
 
 
 # Cerrar sesión
