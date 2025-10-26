@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Menú principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prueba.css') }}">
+    <style>
+        /* Puedes poner esto aquí o en tu CSS */
+        .menu-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* espacio entre botones */
+            margin-top: 30px;
+        }
+
+        .menu-buttons form {
+            width: 100%;
+            max-width: 200px; /* ancho máximo para mantenerlo centrado */
+        }
+
+        .menu-buttons button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Menú Principal</h1>
+        <h3>Selecciona una opción</h3>
+
+        <div class="menu-buttons">
+            <form action="{{ url_for('aventura') }}">
+                <button type="submit">Aventura</button>
+            </form>
+
+            <form action="{{ url_for('pregunta') }}">
+                <button type="submit">Práctica</button>
+            </form>
+
+            <form action="{{ url_for('scoreboard') }}">
+                <button type="submit">Scoreboard</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

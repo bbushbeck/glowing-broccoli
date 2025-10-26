@@ -24,7 +24,7 @@ def leer_preguntas(archivo):
                 print(f"Formato incorrecto en la línea: {line}")
     return preguntas
 
-leer_preguntas("preguntas_finanzas.txt")
+leer_preguntas(os.path.join(app.root_path, "preguntas_finanzas.txt"))
 usuario = ""
 app.secret_key = "clave_super_secreta"  # necesaria para usar sesiones
 
@@ -67,7 +67,7 @@ def login():
             session['usuario'] = usuario
             session['puntos'] = info
             # ✅ Redirige a pregunta.html
-            return redirect(url_for('pregunta'))
+            return redirect(url_for('menu'))
         else:
             # ❌ Si no es válido, mostrar error
             return render_template('login.html', error=info)
@@ -75,6 +75,9 @@ def login():
     # GET → muestra el formulario
     return render_template('login.html')
 
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
 
 # Página de preguntas (solo accesible si ya inició sesión)
 @app.route('/pregunta')
@@ -87,6 +90,13 @@ def pregunta():
     respuesta4 = preguntas[0].incorrecto[2]
     return render_template('pregunta.html', texto = preg, r1 = respuesta1, r2 = respuesta2, r3 = respuesta3, r4 = respuesta4, user = session['usuario'], score = session['puntos'])
 
+@app.route('/aventura')
+def aventura():
+    return render_template('aventura.html')
+
+@app.route('/scoreboard')
+def scoreboard():
+    return render_template('scoreboard.html')
 
 # Cerrar sesión
 @app.route('/logout')
