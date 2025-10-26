@@ -1,0 +1,110 @@
+/* Estilos para la versión estática del juego */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* --- Centrado: nuevo --- */
+/* Utilidad: centrar texto horizontalmente */
+.text-center {
+  text-align: center;
+}
+
+/* Centrar elementos específicos (título, pregunta, historial, resultado) */
+h1,
+.question,
+.history,
+.result-box {
+  text-align: center;
+}
+
+/* Centrar botones (ya que .choices usa flexbox) */
+.choices {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  justify-content: center; /* <-- centra horizontalmente los botones */
+}
+
+/* Centrar controles (por ejemplo el botón Reiniciar) */
+.controls {
+  margin-top: 10px;
+  text-align: center; /* centra su contenido */
+}
+
+/* Opción extra: centrar todo vertical y horizontalmente en pantalla
+   - Aplicar esta clase al <body> o a .container según prefieras.
+   - Ejemplo: <body class="fullscreen-center"> o <div class="container fullscreen-center">
+*/
+.fullscreen-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;     /* centro vertical */
+  justify-content: center; /* centro horizontal */
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* --- fin centrado --- */
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+button.choice {
+  padding: 10px 16px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.choice:hover { opacity: 0.9; }
+
+.controls {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #6c757d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.secondary { background: #adb5bd; }
+
+.result-box {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #e9ffe9;
+  border: 1px solid #c6f6c6;
+  border-radius: 6px;
+}
+
+.hidden { display: none; }
+
+.history {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: #444;
+}
